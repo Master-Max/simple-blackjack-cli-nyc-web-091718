@@ -42,7 +42,7 @@ def hit?(cHand)
   uIn = get_user_input
   
   if uIn == 's'
-  
+    return cHand
   elsif uIn == 'h'
     cHand += deal_card
   else
