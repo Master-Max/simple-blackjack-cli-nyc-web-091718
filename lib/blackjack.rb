@@ -40,6 +40,9 @@ def hit?(n)
   # code hit? here
   prompt_user
   input = get_user_input
+  if input == 'h'
+    n = n + deal_card
+  end
   return n
 end
 
