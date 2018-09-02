@@ -40,6 +40,7 @@ def hit?(n)
   # code hit? here
   prompt_user
   input = get_user_input
+  return n
 end
 
 def invalid_command
