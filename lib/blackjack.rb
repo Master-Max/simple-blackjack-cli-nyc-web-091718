@@ -24,8 +24,9 @@ def get_user_input
   return userMove
 end
 
-def end_game
+def end_game(cTotal)
   # code #end_game here
+  puts "Hi"
 end
 
 def initial_round
