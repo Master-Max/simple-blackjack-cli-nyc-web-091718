@@ -36,8 +36,10 @@ def initial_round
   return hand
 end
 
-def hit?
+def hit?(n)
   # code hit? here
+  prompt_user
+  get_user_input
 end
 
 def invalid_command
