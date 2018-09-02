@@ -10,7 +10,7 @@ end
 
 def display_card_total(cTotal)
   # code #display_card_total here
-  puts "Your cards add up to #{cTotal}"
+  return "Your cards add up to #{cTotal}"
 end
 
 def prompt_user
@@ -32,18 +32,25 @@ end
 def initial_round
   # code #initial_round here
   hand = deal_card + deal_card
-  display_card_total(hand)
+  puts display_card_total(hand)
   return hand
 end
 
-def hit?(n)
+def hit?(cHand)
   # code hit? here
   prompt_user
-  input = get_user_input
-  if input == 'h'
-    n = n + deal_card
+  uIn = get_user_input
+  
+  if uIn == 's'
+  
+  elsif uIn == 'h'
+    cHand += deal_card
+  else
+    invalid_command
+    hit?
   end
-  return n
+  
+  return cHand
 end
 
 def invalid_command
