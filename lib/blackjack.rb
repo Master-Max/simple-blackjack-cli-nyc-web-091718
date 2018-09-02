@@ -26,7 +26,7 @@ end
 
 def end_game(cTotal)
   # code #end_game here
-  puts "Hi"
+  puts "Sorry, you hit #{cTotal}. Thanks for playing!"
 end
 
 def initial_round
