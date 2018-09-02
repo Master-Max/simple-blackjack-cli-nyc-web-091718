@@ -40,13 +40,6 @@ def hit?(n)
   # code hit? here
   prompt_user
   input = get_user_input
-  if input == 'h'
-    n += deal_card
-  elsif input == 's'
-    
-  end
-  
-  display_card_total(n)
 end
 
 def invalid_command
